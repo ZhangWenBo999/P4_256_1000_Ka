@@ -27,7 +27,7 @@
 
                     "data_len": -1,
                     "mask_config": {
-                        "mask_mode": "m7",
+                        "mask_mode": "hybrid",
                         "phase": "train",
                         "m12_mode": "mask_generation/lama_generation/random_thin_256.yaml"
                     }
