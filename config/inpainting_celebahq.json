@@ -27,7 +27,7 @@
 
                     "data_len": -1,
                     "mask_config": {
-                        "mask_mode": "m7",
+                        "mask_mode": "hybrid",
                         "phase": "train",
                         "m12_mode": "mask_generation/lama_generation/random_thin_256.yaml"
                     }
@@ -36,7 +36,7 @@
             "dataloader":{
                 "validation_split": 4, // percent or number
                 "args":{ // arguments to initialize train_dataloader
-                    "batch_size": 4, // batch size in each gpu
+                    "batch_size": 5, // batch size in each gpu
                     "num_workers":10,
                     "shuffle": true,
                     "pin_memory": true,
