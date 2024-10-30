@@ -10,7 +10,7 @@
         "tb_logger": "tb_logger", // path of tensorboard logger
         "results": "results",
         "checkpoint": "checkpoint",
-        "resume_state": "/kaggle/input/m7-hybrid/m7_hybrid/148"
+        "resume_state": "/kaggle/input/m7-025/m7_025/148"
 //        "resume_state": null // ex: 100, loading .state  and .pth from given epoch and iteration
     },
 
@@ -27,7 +27,7 @@
 
                     "data_len": -1,
                     "mask_config": {
-                        "mask_mode": "hybrid",
+                        "mask_mode": "m7",
                         "phase": "train",
                         "m12_mode": "mask_generation/lama_generation/random_thin_256.yaml"
                     }
@@ -152,7 +152,7 @@
         "log_iter": 1e3, // log every specified number of iterations
         "tensorboard" : true,  // tensorboardX enable
 //        "min_val_mae_loss": 1e3, // 记录验证阶段最小的mae值，便于选择最好的权重文件
-        "min_val_mae_loss": 0.014220349490642548, // 记录验证阶段最小的mae值，便于选择最好的权重文件
+        "min_val_mae_loss": 0.04356905817985535, // 记录验证阶段最小的mae值，便于选择最好的权重文件
         "min_val_flag": false, // 最好权重文件的标志位
         "train_previous": [], // 保存之前的训练损失，便于自动生成训练损失曲线
         "eval_previous": []   // 保存之前的验证损失，便于自动生成验证损失曲线
